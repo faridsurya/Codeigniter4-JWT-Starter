@@ -1,0 +1,674 @@
+CRITICAL - 2022-04-23 00:16:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::result()
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 00:16:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getResult()
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 00:17:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getResult()
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 00:21:17 --> Call to a member function query() on null
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 00:24:29 --> Too few arguments to function App\Controllers\Users::__construct(), 0 passed in /opt/lampp/htdocs/ci4/system/CodeIgniter.php on line 809 and exactly 1 expected
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(809): App\Controllers\Users->__construct()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 00:47:29 --> Class 'Config\JWTAuthenticationFilter' not found
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/client', 'before')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-23 00:47:45 --> Class 'Config\JWTAuthenticationFilter' not found
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-04-23 06:47:29 --> validateUser is not a valid rule.
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(90): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(69): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-04-23 08:10:01 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-23 08:10:01 --> Call to a member function getRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(292): CodeIgniter\Validation\Rules->is_unique('fareedsurya@gma...', 'email', Array, NULL)
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'fareedsurya@gma...', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(90): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(27): App\Controllers\BaseController->validateRequest(Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->register()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-04-23 08:12:59 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-23 08:12:59 --> Call to a member function getRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(292): CodeIgniter\Validation\Rules->is_unique('fareedsurya@gma...', 'email', Array, NULL)
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'fareedsurya@gma...', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(90): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(27): App\Controllers\BaseController->validateRequest(Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->register()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-04-23 08:14:34 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-23 08:14:34 --> Call to a member function getRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(292): CodeIgniter\Validation\Rules->is_unique('fareedsurya@gma...', 'email', Array, NULL)
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'fareedsurya@gma...', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(90): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(27): App\Controllers\BaseController->validateRequest(Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->register()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-23 08:17:33 --> validateUser is not a valid rule.
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(90): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(69): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-23 08:18:32 --> validateUser is not a valid rule.
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(90): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(69): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-23 08:20:00 --> validateUser is not a valid rule.
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(90): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(67): App\Controllers\BaseController->validateRequest(Array, Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-04-23 08:23:53 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-23 08:23:53 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 /opt/lampp/htdocs/ci4/app/Models/UserModel.php(50): CodeIgniter\BaseModel->first()
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(89): App\Models\UserModel->findUserByEmailAddress('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(77): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-23 08:34:13 --> Call to undefined method App\Controllers\Auth::respond()
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-23 09:01:09 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-23 09:01:09 --> Call to a member function getRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(292): CodeIgniter\Validation\Rules->is_unique('fareedsurya@gma...', 'email', Array, NULL)
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'fareedsurya@gma...', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(91): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(16): App\Controllers\BaseController->validateRequest(Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->register()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-04-23 09:06:28 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-23 09:06:28 --> Call to a member function getRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(292): CodeIgniter\Validation\Rules->is_unique('fareedsurya@gma...', 'email', Array, NULL)
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'fareedsurya@gma...', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(91): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(16): App\Controllers\BaseController->validateRequest(Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->register()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-04-23 09:08:40 --> Table 'matchingcard.user' doesn't exist
+ERROR - 2022-04-23 09:08:40 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-23 09:08:40 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 /opt/lampp/htdocs/ci4/app/Models/UserModel.php(50): CodeIgniter\BaseModel->first()
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(38): App\Models\UserModel->findUserByEmailAddress('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(28): App\Controllers\Auth2->getJWTForUser('fareedsurya@gma...', 201)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->register()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-23 09:11:37 --> Declaration of App\Models\UserModel::save(array $data): array must be compatible with CodeIgniter\BaseModel::save($data): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-23 09:12:24 --> Declaration of App\Models\UserModel::save(array $data): bool should be compatible with CodeIgniter\BaseModel::save($data): bool
+#0 /opt/lampp/htdocs/ci4/app/Models/UserModel.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', '/opt/lampp/htdo...', 58, Array)
+#1 /opt/lampp/htdocs/ci4/system/Autoloader/Autoloader.php(264): include_once('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/ci4/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/ci4/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(23): spl_autoload_call('App\\Models\\User...')
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->register()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-04-23 09:12:43 --> Declaration of App\Models\UserModel::save(array $data) must be compatible with CodeIgniter\BaseModel::save($data): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-04-23 09:13:38 --> Declaration of App\Models\UserModel::save(array $data): bool should be compatible with CodeIgniter\BaseModel::save($data): bool
+#0 /opt/lampp/htdocs/ci4/app/Models/UserModel.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', '/opt/lampp/htdo...', 58, Array)
+#1 /opt/lampp/htdocs/ci4/system/Autoloader/Autoloader.php(264): include_once('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/ci4/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/ci4/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#5 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(23): spl_autoload_call('App\\Models\\User...')
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->register()
+#7 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#8 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-04-23 09:13:53 --> Table 'matchingcard.user' doesn't exist
+ERROR - 2022-04-23 09:24:38 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-23 09:24:38 --> Call to a member function getRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(292): CodeIgniter\Validation\Rules->is_unique('fareedsurya@gma...', 'email', Array, NULL)
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'fareedsurya@gma...', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(91): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(21): App\Controllers\BaseController->validateRequest(Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->register()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-23 09:25:06 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 35 and at least 3 expected
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(35): Firebase\JWT\JWT::encode(Array, false)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(54): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(34): App\Controllers\Auth2->getJWTForUser('fareedsurya@gma...', 201)
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->register()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 09:31:39 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 35 and at least 3 expected
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(35): Firebase\JWT\JWT::encode(Array, false)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(59): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(40): App\Controllers\Auth2->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 09:32:28 --> Class 'App\Controllers\esponseInterface' not found
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->login()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 09:32:48 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 35 and at least 3 expected
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(35): Firebase\JWT\JWT::encode(Array, false)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(59): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(40): App\Controllers\Auth2->getJWTForUser('fareedsurya@gma...', 200)
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 17:07:49 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 35 and at least 3 expected
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(35): Firebase\JWT\JWT::encode(Array, false)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(59): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(40): App\Controllers\Auth2->getJWTForUser('fareedsurya@gma...', 200)
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 17:08:10 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 35 and at least 3 expected
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(35): Firebase\JWT\JWT::encode(Array, false)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(59): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(40): App\Controllers\Auth2->getJWTForUser('fareedsurya@gma...', 200)
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 17:19:08 --> Function name must be a string
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(35): Config\Services::getSecretKey()
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(59): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth2.php(40): App\Controllers\Auth2->getJWTForUser('fareedsurya@gma...', 200)
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth2->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth2))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 18:44:49 --> Call to undefined method App\Controllers\Home::respond()
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 18:44:58 --> Call to undefined method App\Controllers\Home::response()
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 19:34:24 --> Class 'App\Filters\JWT' not found
+#0 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 20:01:26 --> Key may not be empty
+#0 /opt/lampp/htdocs/ci4/app/Filters/AuthFilter.php(49): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', false, Array)
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 20:02:11 --> Key may not be empty
+#0 /opt/lampp/htdocs/ci4/app/Filters/AuthFilter.php(49): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', false, Array)
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 20:05:10 --> Invalid argument supplied for foreach()
+#0 /opt/lampp/htdocs/ci4/vendor/firebase/php-jwt/src/JWT.php(428): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/opt/lampp/htdo...', 428, Array)
+#1 /opt/lampp/htdocs/ci4/vendor/firebase/php-jwt/src/JWT.php(129): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#2 /opt/lampp/htdocs/ci4/app/Filters/AuthFilter.php(50): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', Array)
+#3 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:26:15 --> Invalid argument supplied for foreach()
+#0 /opt/lampp/htdocs/ci4/vendor/firebase/php-jwt/src/JWT.php(428): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/opt/lampp/htdo...', 428, Array)
+#1 /opt/lampp/htdocs/ci4/vendor/firebase/php-jwt/src/JWT.php(129): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#2 /opt/lampp/htdocs/ci4/app/Filters/AuthFilter.php(55): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', Array)
+#3 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:28:10 --> Invalid argument supplied for foreach()
+#0 /opt/lampp/htdocs/ci4/vendor/firebase/php-jwt/src/JWT.php(428): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/opt/lampp/htdo...', 428, Array)
+#1 /opt/lampp/htdocs/ci4/vendor/firebase/php-jwt/src/JWT.php(129): Firebase\JWT\JWT::getKey('kzUf4sxss4AeG5u...', NULL)
+#2 /opt/lampp/htdocs/ci4/app/Filters/AuthFilter.php(55): Firebase\JWT\JWT::decode('eyJ0eXAiOiJKV1Q...', 'kzUf4sxss4AeG5u...', Array)
+#3 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:32:25 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 35
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(35): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:35:12 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 36
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(36): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:35:47 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 36
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(36): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:35:52 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 36
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(36): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:36:26 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 36
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(36): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:38:25 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 36
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(36): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:47:31 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 39
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(39): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:47:57 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 39
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(39): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:50:41 --> Argument 3 passed to Firebase\JWT\JWT::encode() must be of the type string, array given, called in /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php on line 39
+#0 /opt/lampp/htdocs/ci4/app/Helpers/jwt_helper.php(39): Firebase\JWT\JWT::encode(Array, 'kzUf4sxss4AeG5u...', Array)
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(80): getSignedJWTForUser('fareedsurya@gma...')
+#2 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(61): App\Controllers\Auth->getJWTForUser('fareedsurya@gma...')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->login()
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-04-23 20:53:40 --> Class 'Key' not found
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(25): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 20:56:35 --> Class 'Key' not found
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(25): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:12:03 --> Call to undefined function App\Controllers\getResponse()
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-23 21:16:43 --> Too few arguments to function getJWTFromRequest(), 0 passed in /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php on line 25 and exactly 1 expected
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(25): getJWTFromRequest()
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:23:23 --> Too few arguments to function App\Controllers\BaseController::getUserData(), 0 passed in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18 and exactly 1 expected
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:23:50 --> Too few arguments to function App\Controllers\BaseController::getUserData(), 0 passed in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18 and exactly 1 expected
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:24:09 --> Too few arguments to function App\Controllers\BaseController::getUserData(), 0 passed in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18 and exactly 1 expected
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:24:22 --> Too few arguments to function App\Controllers\BaseController::getUserData(), 0 passed in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18 and exactly 1 expected
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:32:42 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(26): validateJWTFromRequest('eyJ0eXAiOiJKV1Q...')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:33:59 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, object given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getResponse(Object(stdClass))
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:34:59 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, null given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getResponse(NULL)
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:35:20 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, string given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getResponse('ok')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:35:32 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, string given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getResponse('ok')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:35:43 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, string given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getResponse('ok')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:35:56 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, string given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getResponse('ok')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:36:33 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, string given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 19
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(19): App\Controllers\BaseController->getResponse('ok')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:37:12 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, string given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 19
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(19): App\Controllers\BaseController->getResponse('ok')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:37:55 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, string given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 19
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(19): App\Controllers\BaseController->getResponse('ok')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:39:35 --> Too few arguments to function App\Controllers\BaseController::getUserData(), 0 passed in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18 and exactly 1 expected
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:40:15 --> Too few arguments to function App\Controllers\BaseController::getUserData(), 0 passed in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 18 and exactly 1 expected
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:41:34 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, string given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 19
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(19): App\Controllers\BaseController->getResponse('Bearer eyJ0eXAi...')
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:43:29 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, object given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 19
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(19): App\Controllers\BaseController->getResponse(Object(stdClass))
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:43:53 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, null given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 19
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(19): App\Controllers\BaseController->getResponse(NULL)
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:44:54 --> Argument 1 passed to App\Controllers\BaseController::getResponse() must be of the type array, object given, called in /opt/lampp/htdocs/ci4/app/Controllers/Users.php on line 19
+#0 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(19): App\Controllers\BaseController->getResponse(Object(stdClass))
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:48:54 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(25): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:49:01 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(25): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:49:31 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(25): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:49:46 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(25): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:51:08 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(25): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:52:12 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(99): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 21:52:12 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(99): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 21:52:13 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(99): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(18): App\Controllers\BaseController->getUserData()
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-23 21:52:58 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(22): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:52:59 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(22): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:53:27 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(22): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:53:28 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(22): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:54:55 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(22): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-23 21:56:41 --> Return value of getJWTFromRequest() must be of the type string, null returned
+#0 /opt/lampp/htdocs/ci4/app/Filters/JWTAuthenticationFilter.php(22): getJWTFromRequest('')
+#1 /opt/lampp/htdocs/ci4/system/Filters/Filters.php(173): App\Filters\JWTAuthenticationFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/users/show', 'before')
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

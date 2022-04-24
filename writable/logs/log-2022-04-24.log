@@ -1,0 +1,143 @@
+ERROR - 2022-04-24 00:40:48 --> Table 'matchingcard.user' doesn't exist
+CRITICAL - 2022-04-24 00:40:48 --> Call to a member function getRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(292): CodeIgniter\Validation\Rules->is_unique('youremail@domai...', 'email', Array, NULL)
+#1 /opt/lampp/htdocs/ci4/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'youremail@domai...', Array, Array)
+#2 /opt/lampp/htdocs/ci4/app/Controllers/BaseController.php(91): CodeIgniter\Validation\Validation->run(Array)
+#3 /opt/lampp/htdocs/ci4/app/Controllers/Auth.php(22): App\Controllers\BaseController->validateRequest(Array, Array)
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Auth->register()
+#5 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-24 01:12:10 --> Call to undefined method App\Controllers\Users::uri_segment()
+#0 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#1 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-04-24 01:14:33 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:14:33 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '23')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('23')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:15:29 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:15:29 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '23')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('23')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:15:30 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:15:30 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '23')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('23')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:16:31 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:16:31 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '23')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(25): CodeIgniter\BaseModel->find('23')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:16:32 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:16:32 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '23')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(25): CodeIgniter\BaseModel->find('23')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:18:42 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:18:42 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '23')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('23')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:19:01 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:19:01 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '23')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('23')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:21:26 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:21:26 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '62640c421cca4')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('62640c421cca4')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:21:29 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:21:29 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '62640c421cca4')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('62640c421cca4')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:24:13 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:24:13 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '62640c421cca4')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('62640c421cca4')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:24:16 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:24:16 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '62640c421cca4')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(24): CodeIgniter\BaseModel->find('62640c421cca4')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:26:39 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:26:39 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '62640c421cca4')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(26): CodeIgniter\BaseModel->find('62640c421cca4')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:28:06 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:28:06 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '62640c421cca4')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(26): CodeIgniter\BaseModel->find('62640c421cca4')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-04-24 01:28:31 --> Unknown column 'users.id' in 'where clause'
+CRITICAL - 2022-04-24 01:28:31 --> Call to a member function getFirstRow() on bool
+#0 /opt/lampp/htdocs/ci4/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '62640c421cca4')
+#1 /opt/lampp/htdocs/ci4/app/Controllers/Users.php(26): CodeIgniter\BaseModel->find('62640c421cca4')
+#2 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(832): App\Controllers\Users->find()
+#3 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/ci4/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/ci4/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
